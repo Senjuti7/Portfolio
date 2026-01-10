@@ -32,7 +32,7 @@ const Navbar = () => {
     </div>
         <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll ? "bg-white/20 backdrop-blur-lg backdrop-saturate-150 shadow-sm" : ""}`}>
             <a href="#top">
-                <Image src={assets.logo} alt="logo" className="w-28 cursor-pointer mr-14"/>
+                <Image src={assets.logo_new} alt="logo" className="w-35 cursor-pointer mr-14"/>
             </a>
 
             <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : 
@@ -45,9 +45,9 @@ const Navbar = () => {
 
             <div className='flex items-center gap-4'>
 
-                <button className='cursor-pointer'>
+                {/* <button className='cursor-pointer'>
                     <Image src={assets.moon_icon} alt='icon' className='w-6'/>
-                </button>
+                </button> */}
                 
 
                 <a href="#contact" className='hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo'>Contact<Image src={assets.arrow_icon} alt="arrow" className="w-3"/></a>

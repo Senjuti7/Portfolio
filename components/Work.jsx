@@ -39,6 +39,7 @@ const Work = () => {
             transition={{duration: 0.5, delay: 0.7}}
         className='grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] my-10 gap-5'>
             {workData.map((project,index)=>(
+                
                 <motion.div
                         whileInView={{scale:1.05}}
                         transition={{duration: 0.3}}
@@ -50,7 +51,9 @@ const Work = () => {
                         </div>
 
                         <div className='border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition'>
-                            <Image src={assets.send_icon} alt='send icon' className='w-5' />
+                            <a href={project.link} target="_blank" rel="noopener noreferrer">
+                                <Image src={assets.send_icon} alt="send icon" className="w-5" />
+                            </a>
                         </div>
                     </div>
                 </motion.div>
